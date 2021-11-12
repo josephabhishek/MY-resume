@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME-PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  media="screen and (max-width:800px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and(max-width:530px)" href="phone.css">
+    <style>
+
+#pic{
+    flex-direction: column;
+    align-items: center;
+}
+#pic img{
+    width: 475px;
+    height: 300px;
+
+}
+#intro h2 {
+    text-align: center;
+    padding: 10px;
+}
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.input{
+    width: 60%;
+
+}
+#msg{
+    width: 55%;
+
+}
+#send{
+    width: 20%;
+}
+
+    </style>
+    <style>
+        #home{
+    height: 820px;
+
+}
+.headings{
+    font-size: 1.7rem;
+
+}
+#pic img{
+    width: 300px;
+    height: 175px;
+
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+
+.gallery img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+}
+.input{
+    width:80%
+}
+#msg{
+width: 70%;
+}
+#send{
+    width: 20%;
+}
+    </style>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5 ease;
+}
+.navbar ul li a:hover{
+    background-color:white;
+    color: black ;
+    box-shadow: 0 0 10px white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+  justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+     height: 900px;
+     background: url('Netflix.png') ; height: 5000px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+
+}
+.heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background: transparent;
+    border:  1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white ,0 0 10px white ,0 0 15px white;
+    font-weight: bold;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+
+
+}
+#pic{
+    display: flex;
+    height: 200px;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+ #intro{
+     display: flex;
+     flex-direction: column;
+     text-align: justify;
+     padding: 10px;
+ }
+ #intro h2{
+     margin: 2rem;
+     margin-bottom: 20px;
+
+ }
+
+ #portfolio{
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(0,0,0,0.9);
+     color: white;
+     align-items: center;
+     padding: 20px;
+
+
+
+ }
+ .gallery{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     box-sizing: border-box;
+
+ }
+ .gallery img{
+     width: 360px;
+     height: 240px;
+     margin: 10px;
+
+ }
+ 
+
+ #serivces{
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+     
+     
+
+ }
+ .row{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     box-sizing: border-box;
+     
+
+ }
+ .box{
+     display: flex;
+     flex-direction: column;
+     width: 300px;
+     height: 250px;
+     border: 1px solid black;
+     margin: 15px;
+     padding: 10px;
+     align-items: center;
+     text-align: justify;
+     border-radius: 15px;
+     background: -o-linear-gradient(to top,rgb(255,45,45)50%, white 50%);
+     background-size: 100% 200%;
+     transition: all .8s;
+
+ }
+
+ .box:hover{
+     background-position: left bottom;
+     color: white;
+     border: none;
+     box-shadow: 0 0 20px rgb(255,45,45);
+
+     
+ }
+ #contact{
+     display: flex;
+     flex-direction: column;
+     box-sizing: border-box;
+     background-color: black;
+     color: white;
+
+ }
+ .form{
+     display: flex;
+     flex-direction: column;
+     box-sizing: border-box;
+     align-items: center;
+     margin: 20px 0px;
+
+ }
+ .input{
+     padding: 12px;
+     margin: 15px;
+     width: 30%;
+     border: none;
+     outline: none;
+ }
+ #msg{
+     width: 20%;
+     padding: 10px;
+     margin: 15px;
+     border: none;
+     outline: none;
+
+ }
+ #send{
+     padding: 10px;
+     width: 10%;
+     margin: 40px;
+     border: none;
+     outline: none;
+
+ }
+ #send:hover{
+     cursor: pointer;
+     box-shadow: 0 0 10px white;
+      
+ }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li> <br>
+            <li><a href="#about"> Me</a></li><br>
+            <li><a href="#portfolio">Portfolio</a></li><br>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="main">
+            <h1 class="heading"> I am <br> Abhishek Joseph</h1>
+            <button class="btn">Hire me</button>
+        </div>
+        </section>
+
+        <section id="about">
+            <h1 class="heading">ABOUT ME</h1>
+                
+            <div id="pic">
+                <img src="" alt="">
+            
+                
+            <div id="intro">
+                <h2>Abhishek Joseph</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem deleniti ipsa maxime voluptatem voluptas asperiores ut deserunt esse autem excepturi neque, a, impedit eos aut molestiae quidem, iure delectus debitis sequi mollitia. Consectetur ratione sapiente voluptatum nihil rem. Accusamus corrupti soluta animi inventore aspernatur temporibus. Esse beatae similique asperiores nam, aperiam corporis delectus eveniet optio, ipsa inventore sapiente iste laudantium, tenetur mollitia sint fuga ut voluptatibus totam dolorem eum porro deserunt a nulla? Aliquid accusamus, explicabo fugiat doloremque doloribus non nisi voluptatum inventore laudantium, nam ad reiciendis itaque dolorum eaque perferendis. Repellendus rerum debitis obcaecati consequuntur accusantium porro distinctio dolor culpa vel quas doloribus, sequi magnam unde magni, iure repellat optio ex praesentium illum sit, adipisci expedita quaerat? Perferendis dolorum dolores nemo atque, laudantium incidunt expedita voluptas ea et optio. Fugit eaque harum laudantium sunt quasi voluptatum velit voluptate officia quos corporis distinctio incidunt voluptatibus iste nam, sint doloremque nemo culpa voluptates et. A vero mollitia modi alias quidem velit, voluptatem cum eaque excepturi doloremque ducimus perferendis? Id neque aperiam illo optio quasi dignissimos temporibus porro ea reiciendis placeat expedita recusandae voluptate asperiores amet atque, illum suscipit quis hic quibusdam voluptatem aut ipsam. Et sit ad incidunt aliquam aspernatur nobis quibusdam, hic laborum quae deleniti? Ratione ut, necessitatibus temporibus at delectus nostrum? Deserunt ab a velit esse eligendi, ut, quia dignissimos voluptas eveniet pariatur, ipsum tempora sint? Hic voluptatibus modi blanditiis aliquid quam at optio tempore pariatur, reprehenderit, voluptas libero neque consequuntur accusamus laboriosam commodi suscipit quae! In, minus aperiam sed fugiat quas ut </p>
+
+
+            </div>
+
+            </div>
+        </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <section id="portfolio">
+            <h1 class="headings">PORTFOLIO</h1>
+            <div class="gallery">
+                <img src="pexels-eduardo-dutra-2115217.jpg" alt="">
+                <img src="pexels-eduardo-dutra-2115217.jpg" alt="">
+                <img src="pexels-eduardo-dutra-2115217.jpg" alt="">
+                <img src="pexels-eduardo-dutra-2115217.jpg" alt="">
+                <img src="pexels-eduardo-dutra-2115217.jpg" alt="">
+                <img src="pexels-eduardo-dutra-2115217.jpg" alt="">
+                <img src="pexels-eduardo-dutra-2115217.jpg" alt="">
+                <img src="pexels-eduardo-dutra-2115217.jpg" alt="">
+            </div>
+        </section>
+         
+        <section id="services">
+            <h1 class="headings">SERVICES</h1>
+            <div class="row">
+                <div class="box">
+                    <h1 class="headings">Website Design</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe excepturi voluptate architecto iste animi molestiae mollitia, voluptas aliquid veniam facere odit corporis sint quis a. Temporibus praesentium obcaecati earum iste, nulla saepe tenetur numquam, enim a magnam consequuntur porro veniam. Cupiditate quod odit velit quidem corporis nihil id minima omnis accusamus repellat. Tenetur, excepturi.  
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="box">
+                        <h1 class="headings">UX/UI Design</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe excepturi voluptate architecto iste animi molestiae mollitia, voluptas aliquid veniam facere odit corporis sint quis a. Temporibus praesentium obcaecati earum iste, nulla saepe tenetur numquam, enim a magnam consequuntur porro veniam. Cupiditate quod odit velit quidem corporis nihil id minima omnis accusamus repellat. Tenetur, excepturi.  
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="box">
+                            <h1 class="headings">Digital Marketing</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe excepturi voluptate architecto iste animi molestiae mollitia, voluptas aliquid veniam facere odit corporis sint quis a. Temporibus praesentium obcaecati earum iste, nulla saepe tenetur numquam, enim a magnam consequuntur porro veniam. Cupiditate quod odit velit quidem corporis nihil id minima omnis accusamus repellat. Tenetur, excepturi.  
+                            </p>
+                        </div>
+            </div>
+        </section>
+        
+        
+        <section id="contact">
+            <h1 class="heading">CONTACT</h1>
+            <form action="" class="form">
+
+                <input type="text" name="name" class="input" placeholder="enter your name">
+                <input type="email" name="email" class="input" placeholder="enter your email">
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder=" enter your message"></textarea>
+                <input type="submit" value="send" id="send">
+
+
+            </form>
+
+
+
+
+        </section>
+
+
+
+    </section>
+
+
+
+
+
+</body>
+</html>
